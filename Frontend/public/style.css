@@ -1,21 +1,37 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: white;
     margin: 0;
     padding: 0;
 }
 
-.container {
+#container {
     width: 80%;
     margin: auto;
     padding: 20px;
-    background: #ffffff;
+    background: darkolivegreen;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
-h1 {
+#insert-music{
+    background-color: olivedrab;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+#inputs-insert-music {
+
+}
+#button-insert-music {
+
+}
+
+h2 {
     text-align: center;
-    color: #333;
+    color: white;
 }
 
 .music-item {
@@ -28,5 +44,22 @@ h1 {
 iframe {
     width: 100%;
     height: 90px;
+    margin-top: 20px;
     border: none;
+}
+
+button {
+    background-color: olivedrab;
+    color: white; /* cor do texto em contraste */
+    border: 2px solid darkolivegreen; /* borda levemente mais escura */
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+/* Efeito de clique */
+button:active {
+    background-color: darkolivegreen;
+    transform: scale(0.98);
 }
