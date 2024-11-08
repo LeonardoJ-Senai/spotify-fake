@@ -31,7 +31,7 @@ async function renderMusicas() {
             
             // Adiciona um event listener para abrir a função de edição ao clicar
             buttonEdit.addEventListener("click", () => {
-                // Solicita os novos valores usando prompt (ou use um modal para uma interface melhor)
+                // Solicita os novos valores usando prompt (melhor com modal)
                 const titulo = prompt("Novo título da música:", musica.titulo);
                 const artista = prompt("Novo artista:", musica.artista);
                 const album = prompt("Novo álbum:", musica.album);
@@ -171,7 +171,6 @@ async function editMusica(id, titulo, artista, album, duracao, musica_url) {
     }
 }
 
-// Exemplo de uso ao clicar no botão de edição
 buttonEdit.addEventListener("click", () => {
     const titulo = prompt("Novo título da música:", musica.titulo);
     const artista = prompt("Novo artista:", musica.artista);
